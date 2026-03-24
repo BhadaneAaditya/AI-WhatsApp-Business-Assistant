@@ -1,3 +1,5 @@
+# AI WhatsApp Business Assistant - MVP
+
 A production-ready MVP for an AI-powered WhatsApp business assistant that automatically responds to customer messages using LLMs while maintaining conversation memory and extracting structured business data.
 
 ## Features
@@ -139,3 +141,7 @@ Use the ngrok URL as your webhook callback URL in Meta Developer Portal.
 - User: "I want to buy some shoes" → Classification: WARM
 - User: "What's the price? I'll buy 2 pairs" → Classification: HOT, Order: {product: "shoes", quantity: 2}
 - User: "Thanks, that's all for now" → No lead status change
+
+## License
+
+MIT License
