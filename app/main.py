@@ -10,12 +10,12 @@ from app.utils.logging import logger
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("Starting AI WhatsApp Assistant...")
+    logger.info("Starting AI WhatsApp Assistant")
     init_db()
     scheduler_service.start()
     yield
     scheduler_service.stop()
-    logger.info("Shutting down AI WhatsApp Assistant...")
+    logger.info("Shutting down AI WhatsApp Assistant")
 
 
 app = FastAPI(
